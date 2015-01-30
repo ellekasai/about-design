@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+  color: #212121;
+  font-size: 70%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/ellekasai.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.header__inner {
+  position: relative;
+  height: 100%;
+  background-color: rgba(156, 39, 176, 0.5);
+}
+
+.header__inner__nav {
+  background-color: #9C27B0;
+}
+
+.header__inner__nav ul {
+  text-align: center;
+}
+
+.header__inner__nav li {
+  display: inline-block;
+}
+
+.header__inner__nav li + li {
+  margin-left: 20px;
+}
+
+.header__inner__nav a {
+  display: block;
+  padding: 10px;
+  color: #E1BEE7;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.header__inner__nav a:hover {
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  color: #E1BEE7;
+  font-size: 5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 > span {
+  color: #fff;
+  font-weight: 700;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
