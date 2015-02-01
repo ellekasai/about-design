@@ -5,7 +5,6 @@
 ———————————–———————————–*/
 
 body {
-  background-color: #FBF3FF;
   color: #727272;
   font-size: 90%;
   font-family: "Roboto", sans-serif;
@@ -18,9 +17,13 @@ main p {
 }
 
 h2 {
-  color: #9F67B5;
+  color: #99a599;
   font-size: 2rem;
   font-weight: normal;
+}
+
+h3 {
+  color: #99a599;
 }
 
 ul {
@@ -36,11 +39,11 @@ img {
 }
 
 a {
-  color: #FF94B9;
+  color: #2A7B47;
 }
 
 a:hover {
-  color: #FF4081;
+  color: #3BAF65;
 }
 
 /*———————————–———————————–
@@ -62,12 +65,12 @@ a:hover {
   float: left;
 }
 
-figure.fl-l {
-  margin-left: 0;
-}
-
 .fl-r {
   float: right;
+}
+
+figure.fl-l {
+  margin-left: 0;
 }
 
 figure.fl-r {
@@ -84,7 +87,7 @@ header {
   height: 100vh;
   background-image: url("../images/ellekasai.jpg");
   background-repeat: no-repeat;
-  background-position: center 2rem;
+  background-position: top center;
   background-size: cover;
 }
 
@@ -93,7 +96,7 @@ h1 {
   bottom: 1rem;
   left: 0;
   width: 100%;
-  color: #651B71;
+  color: #99a599;
   font-size: 4rem;
   font-weight: normal;
   text-align: center;
@@ -108,8 +111,8 @@ h1 > span {
   height: 100%;
 }
 
-.header__inner__nav {
-  background-color: #fff;
+/* .header__inner__nav {
+  background-color: rgba(1, 1, 1, 0.2);
 }
 
 .header__inner__nav ul {
@@ -126,15 +129,22 @@ h1 > span {
 
 .header__inner__nav a {
   display: block;
-  padding: 10px;
-  color: #B6B6B6;
-  text-transform: uppercase;
+  padding: 15px 10px;
+  color: #fff;
+  text-transform: lowercase;
   font-size: 1rem;
   text-decoration: none;
 }
 
 .header__inner__nav a:hover {
-  color: #333;
+  color: #eee;
+} */
+
+.header__inner__title {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 45rem;
 }
 
 /*———————————–———————————–
@@ -149,4 +159,19 @@ h1 > span {
 
 .main__container__block + .main__container__block {
   margin-top: 2rem;
+}
+
+.main__container__images {
+  width: 35rem;
+}
+
+.main__container__images > figure {
+  display: inline-block;
+  margin: 0 0 2rem 2rem;
+}
+
+.main__container__images > figure > figcaption {
+  margin-top: 1rem;
+  color: #99a599;
+  text-align: center;
 }

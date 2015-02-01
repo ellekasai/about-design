@@ -6,25 +6,26 @@
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="stylesheets/animate.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheets/about.css">
 </head>
 <body>
   <header>
     <div class="header__inner">
-      <div class="header__inner__nav">
-        <nav role="navigation">
-          <ul>
-            <li><a href="#part-1">I was a sales person</a></li>
-            <li><a href="#part-2">Attending conferences</a></li>
-            <li><a href="#part-3">Teaching is my forte</a></li>
-            <li><a href="#part-4">Open source projects</a></li>
-            <li><a href="#part-5">Now I'm in Vancouver </a></li>
-            <li><a href="#part-6">You can say hi!</a></li>
-          </ul>
-        </nav>
-      </div>
-      <h1>I'm <span>Elle Kasai</span>, a <span>designer</span> in Vancouver.</h1>
+<!--       <div class="header__inner__nav">
+  <nav role="navigation">
+    <ul>
+      <li><a href="#part-1">I was a sales person</a></li>
+      <li><a href="#part-2">Attending conferences</a></li>
+      <li><a href="#part-3">Teaching is my forte</a></li>
+      <li><a href="#part-4">Open source projects</a></li>
+      <li><a href="#part-5">Now I'm in Vancouver </a></li>
+      <li><a href="#part-6">You can say hi!</a></li>
+    </ul>
+  </nav>
+</div> -->
+      <h1 class="animated fadeInRight header__inner__title">I'm <span>Elle Kasai</span>, a <span>designer</span> based in Vancouver, BC.</h1>
     </div>
   </header>
   <main>
@@ -48,23 +49,29 @@
         <p>My last project in Bizreach was <a href="http://woman.bizreach.jp/" target="_blank">BizReach Woman</a>, a job site specifically for female business executives in Japan.</p>
       </div>
     </div>
-    <div id="part-2">
-      <h2>色々なカンファレンスに出席した</h2>
-      <p>コーディングやデザインの勉強を重ねるにつれ､私はカンファレンスへの参加にも興味をもつようになった｡スピーカーから各々の分野についてノウハウを得られるだけでなく､世界各国からやってきた参加者とデザインやコーディングについて話すことができるカンファレンス｡とても刺激を受けられるので､定期的に参加している｡</p>
-      <figure>
-        <img src="http://dummyimage.com/300x200/000/fff" alt="">
-        <figcaption>CSS Conf / US, 2013</figcaption>
-      </figure>
-      <figure>
-        <img src="http://dummyimage.com/300x200/000/fff" alt="">
-        <figcaption>CSS Conf / Germany, 2014</figcaption>
-      </figure>
-      <figure>
-        <img src="http://dummyimage.com/300x200/000/fff" alt="">
-        <figcaption>Smashing Conf / Canada, 2014</figcaption>
-      </figure>
+    <div id="part-2" class="main__container cf">
+      <h2>Attending conferences</h2>
+      <div class="main__container__images fl-r">
+        <figure>
+          <img src="http://dummyimage.com/245x155/000/fff" alt="">
+          <figcaption>CSS Conf / US, 2013</figcaption>
+        </figure>
+        <figure>
+          <img src="http://dummyimage.com/245x155/000/fff" alt="">
+          <figcaption>CSS Conf / Germany, 2014</figcaption>
+        </figure>
+        <figure>
+          <img src="http://dummyimage.com/245x155/000/fff" alt="">
+          <figcaption>Smashing Conf / Canada, 2014</figcaption>
+        </figure>
+        <figure>
+          <img src="http://dummyimage.com/245x155/000/fff" alt="">
+          <figcaption>Style & Class Conf / Canada, 2014</figcaption>
+        </figure>
+      </div>
+      <p>As I've studied coding and designing, I became deeply fascinated by design conferences. Talks from great speakers are very informative, and chatting with attendees is exciting for me. That's why I attend a conference regularly.</p>
     </div>
-    <div id="part-3">
+    <div id="part-3" class="main__container cf">
       <h2>学んだことを色んな場面で話してる</h2>
       <p>2013年に初めてCSSのカンファレンスに参加して以来､自分自身も教える側になりたいと思うようになった｡ そこで､During my free time, I've taught an online HTML/CSS course and spoke at coding-related events. 今のところまだ日本語でしか話したことがないが､ I hope to one day speak at an international design conference such as CSSConf.</p>
       <div>
@@ -113,7 +120,7 @@
         <p>2/19に<a href="http://www.meetup.com/Code-Coffee-Vancouver/" target="_blank">Code & Coffee</a>というmeetupで､スピーカーを務める予定です｡私にとって初めての英語のスピーチで､テーマは「How to market micro open source projects」です｡</p>
       </div>
     </div>
-    <div id="part-4">
+    <div id="part-4" class="main__container cf">
       <h2>今オープンソースこんなことやってる</h2>
       <p>コーディングを始めて一年半以上が経ち､徐々にオープンソース活動にも力を入れるようになりました｡ここでご紹介している4つのプロジェクトは､全てStarを100以上獲得しているものです｡それぞれlanding pageにリンクしているので､ぜひ見てみてください!</p>
       <div>
@@ -160,7 +167,7 @@
         <p>Coming soon!</p>
       </div>
     </div>
-    <div id="part-5">
+    <div id="part-5" class="main__container cf">
       <h2>もっとできるようになりたくて今バンクーバーにいる</h2>
       <figure>
         <img src="http://dummyimage.com/500x350/000/fff" alt="">
@@ -169,7 +176,7 @@
       <p><a href="mailto:elle.kasai@gmail.com" target="_blank">E-mail</a></p>
       <p><a href="https://www.linkedin.com/in/ellekasai" target="_blank">LinkedIn</a></p>
     </div>
-    <div id="part-6">
+    <div id="part-6" class="main__container cf">
       <h2>こんな私と話したい?</h2>
       <p>気軽に声かけてね!</p>
       <ul>
