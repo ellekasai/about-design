@@ -101,7 +101,7 @@ figure.fl-r {
   width: 80vw;
 }
 
-.section__block + .sectionr__block {
+.section__block + .section__block {
   margin-top: 2rem;
 }
 
