@@ -51,6 +51,18 @@ a:hover {
   color: #3BAF65;
 }
 
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /*———————————–———————————–
   General
 ———————————–———————————–*/
@@ -82,6 +94,39 @@ figure.fl-r {
   margin-right: 0;
 }
 
+.section {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 80vw;
+}
+
+.section__block + .sectionr__block {
+  margin-top: 2rem;
+}
+
+.section__images {
+  width: 42rem;
+  text-align: center;
+}
+
+.section__images div + div {
+  margin-top: 2rem;
+}
+
+.section__images figure {
+  display: inline-block;
+  margin: 0;
+}
+
+.section__images figure + figure {
+  margin-left: 2rem;
+}
+
+.section__images figure > figcaption {
+  margin-top: 1rem;
+  color: #99a599;
+  text-align: center;
+}
 
 /*———————————–———————————–
   Header
@@ -127,37 +172,3 @@ h1 > span {
 /*———————————–———————————–
   Main
 ———————————–———————————–*/
-
-.main__container {
-  margin: 0 auto;
-  padding: 2rem 0;
-  width: 80vw;
-}
-
-.main__container__block + .main__container__block {
-  margin-top: 2rem;
-}
-
-.main__container__images {
-  width: 42rem;
-  text-align: center;
-}
-
-.main__container__images div + div {
-  margin-top: 2rem;
-}
-
-.main__container__images figure {
-  display: inline-block;
-  margin: 0;
-}
-
-.main__container__images figure + figure {
-  margin-left: 2rem;
-}
-
-.main__container__images figure > figcaption {
-  margin-top: 1rem;
-  color: #99a599;
-  text-align: center;
-}
