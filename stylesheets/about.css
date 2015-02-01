@@ -45,6 +45,7 @@ img {
 
 a {
   color: #2A7B47;
+  text-decoration: none;
 }
 
 a:hover {
