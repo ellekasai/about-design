@@ -1,10 +1,83 @@
 @charset "UTF-8";
 
+/*———————————–———————————–
+  Base Settings
+———————————–———————————–*/
+
 body {
-  color: #212121;
-  font-size: 70%;
+  background-color: #FBF3FF;
+  color: #727272;
+  font-size: 90%;
   font-family: "Roboto", sans-serif;
+  line-height: 1.6;
 }
+
+main p {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+
+h2 {
+  color: #9F67B5;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #FF94B9;
+}
+
+a:hover {
+  color: #FF4081;
+}
+
+/*———————————–———————————–
+  General
+———————————–———————————–*/
+
+.cf:before,
+.cf:after {
+  content:"";
+  display:block;
+  overflow:hidden;
+}
+
+.cf:after {
+  clear:both;
+}
+
+.fl-l {
+  float: left;
+}
+
+figure.fl-l {
+  margin-left: 0;
+}
+
+.fl-r {
+  float: right;
+}
+
+figure.fl-r {
+  margin-right: 0;
+}
+
+
+/*———————————–———————————–
+  Header
+———————————–———————————–*/
 
 header {
   width: 100%;
@@ -13,6 +86,21 @@ header {
   background-repeat: no-repeat;
   background-position: center 2rem;
   background-size: cover;
+}
+
+h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  color: #651B71;
+  font-size: 4rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 > span {
+  font-weight: 700;
 }
 
 .header__inner {
@@ -49,23 +137,16 @@ header {
   color: #333;
 }
 
-h1 {
-  position: absolute;
-  bottom: 1rem;
-  left: 0;
-  width: 100%;
-  color: #651B71;
-  font-size: 4rem;
-  font-weight: normal;
-  text-align: center;
+/*———————————–———————————–
+  Main
+———————————–———————————–*/
+
+.main__container {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 80vw;
 }
 
-h1 > span {
-  font-weight: 700;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main__container__block + .main__container__block {
+  margin-top: 2rem;
 }
