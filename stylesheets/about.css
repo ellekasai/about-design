@@ -13,7 +13,7 @@ body {
 
 main p {
   font-family: 'Roboto Slab', serif;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h2 {
@@ -99,7 +99,8 @@ h1 {
   color: #99a599;
   font-size: 4rem;
   font-weight: normal;
-  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -1px;
 }
 
 h1 > span {
