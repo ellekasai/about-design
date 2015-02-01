@@ -23,6 +23,7 @@ h2 {
 }
 
 h3 {
+  margin-top: 2rem;
   color: #99a599;
 }
 
@@ -30,6 +31,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+li + li {
+  margin-top: 1rem;
 }
 
 img {
@@ -98,48 +103,19 @@ h1 {
   width: 100%;
   color: #99a599;
   font-size: 4rem;
-  font-weight: normal;
+  font-weight: 100;
   line-height: 1.2;
   letter-spacing: -1px;
 }
 
 h1 > span {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .header__inner {
   position: relative;
   height: 100%;
 }
-
-/* .header__inner__nav {
-  background-color: rgba(1, 1, 1, 0.2);
-}
-
-.header__inner__nav ul {
-  text-align: center;
-}
-
-.header__inner__nav li {
-  display: inline-block;
-}
-
-.header__inner__nav li + li {
-  margin-left: 20px;
-}
-
-.header__inner__nav a {
-  display: block;
-  padding: 15px 10px;
-  color: #fff;
-  text-transform: lowercase;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.header__inner__nav a:hover {
-  color: #eee;
-} */
 
 .header__inner__title {
   position: absolute;
@@ -163,15 +139,24 @@ h1 > span {
 }
 
 .main__container__images {
-  width: 35rem;
+  width: 42rem;
+  text-align: center;
 }
 
-.main__container__images > figure {
+.main__container__images div + div {
+  margin-top: 2rem;
+}
+
+.main__container__images figure {
   display: inline-block;
-  margin: 0 0 2rem 2rem;
+  margin: 0;
 }
 
-.main__container__images > figure > figcaption {
+.main__container__images figure + figure {
+  margin-left: 2rem;
+}
+
+.main__container__images figure > figcaption {
   margin-top: 1rem;
   color: #99a599;
   text-align: center;
