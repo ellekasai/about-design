@@ -260,20 +260,18 @@ h1 > span {
   Contact
 ———————————–———————————–*/
 
-.contact h2 {
-  margin-bottom: 0;
-}
-
-.contact ul {
-  text-align: center;
-}
-
 .contact li {
   display: inline-block;
 }
 
 .contact li + li {
   margin-left: 1.5rem;
+}
+
+.contact > p{
+  margin-bottom: 0;
+  color: #99a599;
+  font-size: 1.3rem;
 }
 
 .contact a {
@@ -286,12 +284,12 @@ h1 > span {
 
 header .contact {
   position: absolute;
-  bottom: 8rem;
+  bottom: 12rem;
   left: 5rem;
-  width: 25rem;
+  width: 35rem;
 }
 
-footer .contact h2 {
+footer .contact {
   text-align: center;
 }
 
