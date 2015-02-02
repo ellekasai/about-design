@@ -129,6 +129,45 @@ figure.fl-r {
   text-align: center;
 }
 
+.section__projects + .section__projects {
+  margin-top: 6.5rem;
+}
+
+.section__projects > div,
+.section__projects > p {
+  float: left;
+  width: 22.5rem;
+}
+
+.section__projects > p + div,
+.section__projects > div + div {
+  margin-left: 2.2rem;
+}
+
+.section__projects > div {
+  margin-top: -4.5rem;
+}
+
+.section__projects > p {
+  margin-top: 0;
+}
+
+.section__projects h3 {
+  margin-top: 0;
+}
+
+.section__projects a {
+  display: block;
+}
+
+.section__projects a:hover {
+  opacity: 0.8;
+}
+
+.section__projects figure {
+  margin: 0;
+}
+
 /*———————————–———————————–
   Header
 ———————————–———————————–*/
