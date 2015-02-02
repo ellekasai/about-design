@@ -11,6 +11,10 @@ body {
   line-height: 1.6;
 }
 
+main {
+  padding-bottom: 3rem;
+}
+
 main p {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -250,4 +254,52 @@ h1 > span {
 
 .section__projects figure {
   margin: 0;
+}
+
+/*———————————–———————————–
+  Contact
+———————————–———————————–*/
+
+.contact h2 {
+  margin-bottom: 0;
+}
+
+.contact ul {
+  text-align: center;
+}
+
+.contact li {
+  display: inline-block;
+}
+
+.contact li + li {
+  margin-left: 1.5rem;
+}
+
+.contact a {
+  color: #99a599;
+}
+
+.contact a:hover {
+  color: #737B73;
+}
+
+header .contact {
+  position: absolute;
+  bottom: 8rem;
+  left: 5rem;
+  width: 25rem;
+}
+
+footer .contact h2 {
+  text-align: center;
+}
+
+/*———————————–———————————–
+  Footer
+———————————–———————————–*/
+
+footer {
+  padding-bottom: 3rem;
+  background-color: #dae2dd;
 }
