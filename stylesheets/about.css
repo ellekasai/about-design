@@ -122,23 +122,25 @@ figure.fl-r {
 .btn {
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background-color: #3BAF65;
+  background-color: #6A756E;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
+  vertical-align: top;
 }
 
 .btn:hover {
-  background-color: #2A7B47;
+  background-color: #99a599;
 }
 
 .btn > i {
   margin-right: 0.5rem;
 }
 
-.btn + .btn {
+.btn + .btn,
+.btn + iframe {
   margin-left: 1rem;
 }
 
@@ -148,7 +150,7 @@ figure.fl-r {
 
 header {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url("../images/ellekasai.jpg");
   background-repeat: no-repeat;
   background-position: top right;
