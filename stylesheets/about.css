@@ -48,12 +48,12 @@ img {
 }
 
 a {
-  color: #2A7B47;
+  color: #3BAF65;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3BAF65;
+  color: #2A7B47;
 }
 
 @-webkit-keyframes fadeInRight {
