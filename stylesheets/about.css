@@ -104,6 +104,14 @@ figure.fl-r {
 }
 
 /*———————————–———————————–
+  Image border
+———————————–———————————–*/
+
+.img-border {
+  border: 1px solid #99a599;
+}
+
+/*———————————–———————————–
   Button
 ———————————–———————————–*/
 
@@ -182,7 +190,7 @@ h1 > span {
 }
 
 .section__block + .section__block {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .section__block figure {
@@ -238,14 +246,6 @@ h1 > span {
 
 .section__projects h3 {
   margin-top: 0;
-}
-
-.section__projects a {
-  display: block;
-}
-
-.section__projects a:hover {
-  opacity: 0.7;
 }
 
 .section__projects figure {
