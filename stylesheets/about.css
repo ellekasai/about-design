@@ -297,6 +297,10 @@ footer .contact {
   text-align: center;
 }
 
+.section.contact h2 {
+  width: 100%;
+}
+
 /*———————————–———————————–
   Footer
 ———————————–———————————–*/
