@@ -28,6 +28,7 @@ h2 {
 
 h3 {
   margin-top: 2rem;
+  font-size: 1rem;
   color: #99a599;
 }
 
@@ -111,29 +112,26 @@ figure.fl-r {
   Button
 ———————————–———————————–*/
 
-.btn {
+.tag {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
-  background-color: #6A756E;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.5rem !important;
+  border-radius: 0.2rem;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+
+}
+
+.tag-purple {
+  background-color: #dda2d0 !important;
   vertical-align: top;
 }
 
-.btn:hover {
-  background-color: #99a599;
-}
-
-.btn > i {
-  margin-right: 0.5rem;
-}
-
-.btn + .btn,
-.btn + iframe {
-  margin-left: 1rem;
+.tag-cream {
+  background-color: #f9d284 !important;
+  vertical-align: bottom;
 }
 
 /*———————————–———————————–
@@ -233,13 +231,11 @@ h1 > span {
   margin-top: 6.5rem;
 }
 
-.section__projects > div,
-.section__projects > p {
+.section__projects > div {
   float: left;
   width: 22.5rem;
 }
 
-.section__projects > p + div,
 .section__projects > div + div {
   margin-left: 2.2rem;
 }
@@ -248,8 +244,8 @@ h1 > span {
   margin-top: -5.5rem;
 }
 
-.section__projects > p {
-  margin-top: 0;
+.section__projects > div.section__projects__intro {
+  margin-top: -1rem;
 }
 
 .section__projects h3 {
@@ -258,6 +254,10 @@ h1 > span {
 
 .section__projects figure {
   margin: 0;
+}
+
+.section__projects__intro {
+  float: left;
 }
 
 /*———————————–———————————–
