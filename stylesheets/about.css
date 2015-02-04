@@ -74,7 +74,8 @@ h2 {
 
 h3 {
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 p + h3 {
@@ -131,6 +132,10 @@ a:hover {
   Row & Column
 ———————————–———————————–*/
 
+.row {
+  margin: -2rem 0 0 -2rem;
+}
+
 .row:before,
 .row:after {
   content:"";
@@ -142,16 +147,9 @@ a:hover {
   clear:both;
 }
 
-.row + .row {
-  margin-top: 2rem;
-}
-
 .col {
   float: left;
-}
-
-.col + .col {
-  margin-left: 2.2rem;
+  margin: 2rem 0 0 2rem;
 }
 
 .col p {
@@ -164,14 +162,25 @@ a:hover {
 
 .col-sm {
   width: 22.5rem;
+  height: 19rem;
 }
 
 .col-lg {
   width: 34.8rem;
 }
 
+.col-sm div,
+.col-sm h3 {
+  position: relative;
+}
+
 .col-sm div {
+  padding-left: 6rem;
   margin-bottom: 0.5rem;
+}
+
+.col-sm h3 {
+  padding: 0.2rem 0 0 5rem;
 }
 
 .col-sm figure {
@@ -242,6 +251,9 @@ footer .contact {
 
 .tag {
   display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-right: 0.5rem;
   padding: 0.3rem 0.5rem !important;
   border-radius: 0.2rem;
@@ -260,69 +272,110 @@ footer .contact {
   background-color: #f9d284 !important;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
-  .col {
-    float: none;
-  }
-  .col + .col {
-    margin-left: 0;
-  }
-  .col-sm {
-    width: 100%;
-  }
-  .col-lg {
-    width: 100%;
-  }
-}
+/*———————————–———————————–
+  Media Querys
+———————————–———————————–*/
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 1024px) {
   header  {
-    height: 70vh;
+    height: 60vh;
   }
   header > div {
+    height: 50vh;
+    padding: 5vh 0;
     background-color: rgba(1, 1, 1, 0.7)
   }
   main {
     padding-top: 0;
   }
   h1 {
-    top: 2vh;
-    left: 10vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 90vw;
+    font-size: 4rem;
+  }
+  section {
+    width: 90vw;
+  }
+  section > h2 {
+    width: 90vw;
+    font-size: 1.6rem;
+  }
+  .row {
+    margin: -5% 0 0 -5%;
+  }
+  .col {
+    margin: 5% 0 0 5%;
+  }
+  .col-sm {
+    width: 45%;
+  }
+  .col-sm img {
+    width: 100%;
+  }
+  .col-lg {
+    width: 90vw;
+  }
+  .col-lg_images {
+    margin-top: 2rem;
+  }
+  .contact > h2 {
+    font-size: 1.5rem;
+  }
+  .contact > p {
+    font-size: 1.4rem;
+  }
+  header .contact {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 90vw;
+    margin: 10vh auto 0;
+  }
+  footer .contact{
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  header  {
+    height: 80vh;
+  }
+  header > div {
+    height: 70vh;
+  }
+  h1 {
     width: 80vw;
     font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.2;
-    letter-spacing: -1px;
   }
   section + section {
     padding: 0 0 1.5rem;
   }
   section > h2 {
     width: 80vw;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .row {
+    margin: 0;
   }
   .col {
     float: none;
+    margin: 0;
   }
   .col + .col {
-    margin-left: 0;
-    margin-top: 2rem;
+    margin: 2rem 0 0;
   }
   .col-sm {
     width: 100%;
+    height: auto;
   }
   .col-lg {
     width: 100%;
   }
-  .col-sm h3,
-  .col-sm div {
-    position: relative;
-  }
   .col-sm h3 {
-    padding: 0.2rem 0 0 5rem;
-  }
-  .col-sm div {
-    padding-left: 6rem;
+    font-size: 1rem;
   }
   .col-lg_images + .col-lg_images {
     margin-top: 1.5rem;
@@ -336,27 +389,14 @@ footer .contact {
   .col-lg_images figure + figure {
     margin: 1.5rem 0 0;
   }
-  .contact > h2 {
-    font-size: 1.5rem;
-  }
   .contact > p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   header .contact {
-    bottom: 8vh;
-    left: 7vw;
     width: 80vw;
   }
   header .contact ul {
     text-align: center;
-  }
-  footer .contact{
-    padding: 0 10vw;
-  }
-  .tag {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 
