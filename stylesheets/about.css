@@ -128,7 +128,7 @@ a:hover {
 }
 
 /*———————————–———————————–
-  Main Area
+  Row & Column
 ———————————–———————————–*/
 
 .row:before,
@@ -154,7 +154,7 @@ a:hover {
   margin-left: 2.2rem;
 }
 
-.col p{
+.col p {
   margin: 0;
 }
 
@@ -168,6 +168,10 @@ a:hover {
 
 .col-lg {
   width: 34.8rem;
+}
+
+.col-sm div {
+  margin-bottom: 0.5rem;
 }
 
 .col-sm figure {
@@ -199,7 +203,7 @@ a:hover {
   width: 100%;
 }
 
-.contact > p{
+.contact > p {
   margin: 0;
   color: #99a599;
   font-size: 1.3rem;
@@ -254,5 +258,105 @@ footer .contact {
 
 .tag-cream {
   background-color: #f9d284 !important;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  .col {
+    float: none;
+  }
+  .col + .col {
+    margin-left: 0;
+  }
+  .col-sm {
+    width: 100%;
+  }
+  .col-lg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  header  {
+    height: 70vh;
+  }
+  header > div {
+    background-color: rgba(1, 1, 1, 0.7)
+  }
+  main {
+    padding-top: 0;
+  }
+  h1 {
+    top: 2vh;
+    left: 10vw;
+    width: 80vw;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+  section + section {
+    padding: 0 0 1.5rem;
+  }
+  section > h2 {
+    width: 80vw;
+    font-size: 1.6rem;
+  }
+  .col {
+    float: none;
+  }
+  .col + .col {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .col-sm {
+    width: 100%;
+  }
+  .col-lg {
+    width: 100%;
+  }
+  .col-sm h3,
+  .col-sm div {
+    position: relative;
+  }
+  .col-sm h3 {
+    padding: 0.2rem 0 0 5rem;
+  }
+  .col-sm div {
+    padding-left: 6rem;
+  }
+  .col-lg_images + .col-lg_images {
+    margin-top: 1.5rem;
+  }
+  .col-lg_images figure {
+    width: 100%;
+  }
+  .col-lg_images figure > img {
+    width: 100%;
+  }
+  .col-lg_images figure + figure {
+    margin: 1.5rem 0 0;
+  }
+  .contact > h2 {
+    font-size: 1.5rem;
+  }
+  .contact > p {
+    font-size: 1rem;
+  }
+  header .contact {
+    bottom: 8vh;
+    left: 7vw;
+    width: 80vw;
+  }
+  header .contact ul {
+    text-align: center;
+  }
+  footer .contact{
+    padding: 0 10vw;
+  }
+  .tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
