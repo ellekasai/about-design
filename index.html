@@ -5,7 +5,7 @@
   <title>About</title>
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="stylesheets/animate.min.css">
   <link rel="stylesheet" href="stylesheets/wow-animate.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -13,8 +13,8 @@
 </head>
 <body>
   <header>
-    <div class="header__inner">
-      <h1 class="animated fadeInRight header__inner__title">I'm <span>Elle Kasai</span>, a <span>designer</span> based in Vancouver, BC.</h1>
+    <div>
+      <h1 class="animated fadeInRight">I'm <span>Elle Kasai</span>, a <span>designer</span> based in Vancouver, BC.</h1>
       <div class="animated fadeInRight contact">
         <p>I'm currently looking for a full-time or a part-time design position!<br>Say hi at <a href="mailto:elle.kasai@gmail.com" target="_blank">elle.kasai@gmail.com</a> or follow me on:</p>
         <ul>
@@ -27,14 +27,14 @@
     </div>
   </header>
   <main>
-    <div class="animated fadeInDown section cf" data-wow-offset="200">
+    <section class="animated fadeInDown">
       <h2>I love contributing to the code & design community.</h2>
-      <div class="section__projects cf">
-        <div class="section__projects__intro">
+      <div class="row">
+        <div class="col col-sm">
           <p>I started contributing to the code & design community from January 2014. During my free time, I make an open source project, teach an online HTML/CSS course and speak at coding-related events.</p>
           <p>I hope to one day speak at an international design conference such as CSSConf. I'm always working on a new project.</p>
         </div>
-        <div>
+        <div class="col col-sm">
           <a href="http://ellekasai.github.io/resumecards/" target="_blank">
             <figure>
               <img src="images/resumecards.png" alt="">
@@ -44,7 +44,7 @@
             allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
           <p>ResumeCards is a Markdown based resume generator. It looks great on mobile/desktop and can be saved as PDF.</p>
         </div>
-        <div>
+        <div class="col col-sm">
           <a href="http://elle-height.ellekasai.com/" target="_blank">
             <figure>
               <img src="images/podcast.png" alt="" class="img-border">
@@ -54,8 +54,8 @@
           <p>I started podcast this January. I talk about UI/UX design, coding, and my daily life in Vancouver. There are about 400 subscribers in my podcast.</p>
         </div>
       </div>
-      <div class="section__projects cf">
-        <div>
+      <div class="row">
+        <div class="col col-sm">
           <a href="http://ellekasai.github.io/twemoji-awesome/" target="_blank">
             <figure>
               <img src="images/twemojiawesome.png" alt="">
@@ -65,17 +65,16 @@
             allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
           <p>Like Font Awesome, but for Twitter Emoji. Works with Emoji Cheat Sheet.</p>
         </div>
-        <div>
+        <div class="col col-sm">
           <a href="http://ellekasai.github.io/purplecoat.js/" target="_blank">
             <figure>
               <img src="images/purplecoatjs.png" alt="">
             </figure>
           </a>
-          <p><span class="tag tag-purple">Open Source</span><iframe src="http://ghbtns.com/github-btn.html?user=ellekasai&repo=purplecoat.js&type=watch&count=true&size=large"
-            allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
+          <p><span class="tag tag-purple">Open Source</span><iframe src="http://ghbtns.com/github-btn.html?user=ellekasai&repo=purplecoat.js&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></p>
           <p>Purplecoat.js lets you create labeled overlays that can be triggered with a click. And you don't need to write a single line of Javascript.</p>
         </div>
-        <div>
+        <div class="col col-sm">
           <a href="http://ellekasai.github.io/shiori/" target="_blank">
             <figure>
               <img src="images/shiori.png" alt="">
@@ -86,8 +85,8 @@
           <p>Shiori is a Bootstrap-based Jekyll theme. It looks great by default, but you can customize it easily. It supports Bootstrap and Font Awesome classes out of the box.</p>
         </div>
       </div>
-      <div class="section__projects cf">
-        <div>
+      <div class="row">
+        <div class="col col-sm">
           <a href="https://www.youtube.com/watch?v=J_vGbXDAvmQ" target="_blank">
             <figure>
               <img src="images/womenwhocode.jpg" alt="">
@@ -96,7 +95,7 @@
           <h3><span class="tag tag-cream">Speaking</span>Women Who Code Tokyo #1</h3>
           <p>I was an organizer and the keynote speaker at the inaugural Women Who Code event in Tokyo. I spoke about how I learned to code, in front of ~20 female programmers.</p>
         </div>
-        <div>
+        <div class="col col-sm">
           <a href="http://schoo.jp/teacher/336" target="_blank">
             <figure>
               <img src="images/schoo.jpg" alt="">
@@ -105,7 +104,7 @@
           <h3><span class="tag tag-cream">Speaking</span>Introduction to HTML & CSS Sketching</h3>
           <p>Schoo is Japan’s leading online learning platform. I designed and taught a bi-weekly class on HTML/CSS. On every lecture, I did live coding and there were ~500 live viewers.</p>
         </div>
-        <div>
+        <div class="col col-sm">
           <a href="https://www.youtube.com/channel/UC13fw9W2AudLn5Cp9EjRqAQ" target="_blank">
             <figure>
               <img src="images/youtube.jpg" alt="">
@@ -115,60 +114,70 @@
           <p>I recorded tutorial screencasts of HTML & CSS Sketching on YouTube. The content director of <a href="http://schoo.jp/teacher/336" target="_blank">Schoo</a> (a <a href="https://www.udemy.com/" target="_blank">Udemy</a> for Japan) stumbled upon my videos and offered me a speaking opportunity, which led to my talk 2.</p>
         </div>
       </div>
-    </div>
-    <div class="wow fadeInDown section cf" data-wow-offset="200">
+    </section>
+    <section class="wow fadeInDown" data-wow-offset="200">
       <h2>I was a sales person</h2>
-      <div class="section__block cf">
-        <figure class="fl-r">
-          <img src="images/sales.jpg" width="600" alt="">
-        </figure>
-        <p>I was born in Phillippines and raised in Kanagawa, Japan. After graduating from Gakushuin Women's College with a Marketing degree in 2012, I started working at a payment startup in Tokyo as a sales associate.</p>
-        <p>But I've always loved to express myself and be creative, and I wasn't quite satisfied with my job. So after a year, I decided to pursue a completely different career in UI design.</p>
-        <p>I studied Marketing in college and I don't have base skills of art and design. I thought it will take a while to get them, so I decided to study HTML and CSS first. This desition was perfect for me, I dived into exciting coding world.</p>
-        <p>Shortly afterwards, I left my job. I stayed with <a href="http://chibicode.com/" target="_blank">my boyfriend</a> in Silicon Valley and  <a href="https://medium.com/@chibicode/teaching-someone-to-code-is-partly-a-hardware-problem-fe6a2067d770" target="_blank">learned coding and design from him</a>.</p>
+      <div class="row">
+        <div class="col col-lg">
+          <p>I was born in Phillippines and raised in Kanagawa, Japan. After graduating from Gakushuin Women's College with a Marketing degree in 2012, I started working at a payment startup in Tokyo as a sales associate.</p>
+          <p>But I've always loved to express myself and be creative, and I wasn't quite satisfied with my job. So after a year, I decided to pursue a completely different career in UI design.</p>
+          <p>I studied Marketing in college and I don't have base skills of art and design. I thought it will take a while to get them, so I decided to study HTML and CSS first. This desition was perfect for me, I dived into exciting coding world.</p>
+          <p>Shortly afterwards, I left my job. I stayed with <a href="http://chibicode.com/" target="_blank">my boyfriend</a> in Silicon Valley and  <a href="https://medium.com/@chibicode/teaching-someone-to-code-is-partly-a-hardware-problem-fe6a2067d770" target="_blank">learned coding and design from him</a>.</p>
+        </div>
+        <div class="col col-lg">
+          <figure class="col col-lg">
+            <img src="images/sales.jpg"alt="">
+          </figure>
+        </div>
       </div>
-      <div class="section__block cf">
-        <figure class="fl-l">
-          <img src="images/woman.png" width="600" alt="">
+      <div class="row">
+        <figure class="col col-lg">
+          <img src="images/woman.png"alt="">
         </figure>
-        <p>Eventually I came back to Japan, and in Fall 2013, I became a junior product designer at <a href="http://www.bizreach.co.jp/" target="_blank">BizReach</a>. BizReach is Japan’s top job site exclusive to business executives.</p>
-        <p>Mainly I worked on front-end design and coding, but sometimes I was an instructor for engineer onboarding too. I taught basics of HTML, CSS, and Git to approx. 15 new employees. I prepared my own curriculum and teaching materials.</p>
-        <p>My last project in Bizreach was <a href="http://woman.bizreach.jp/" target="_blank">BizReach Woman</a>, a job site specifically for female business executives in Japan.</p>
-      <p>In Fall 2014, I left my job in Tokyo and moved to Vancouver, Canada for new challenges.</p>
+        <div class="col col-lg">
+          <p>Eventually I came back to Japan, and in Fall 2013, I became a junior product designer at <a href="http://www.bizreach.co.jp/" target="_blank">BizReach</a>. BizReach is Japan’s top job site exclusive to business executives.</p>
+          <p>Mainly I worked on front-end design and coding, but sometimes I was an instructor for engineer onboarding too. I taught basics of HTML, CSS, and Git to approx. 15 new employees. I prepared my own curriculum and teaching materials.</p>
+          <p>My last project in Bizreach was <a href="http://woman.bizreach.jp/" target="_blank">BizReach Woman</a>, a job site specifically for female business executives in Japan.</p>
+          <p>In Fall 2014, I left my job in Tokyo and moved to Vancouver, Canada for new challenges.</p>
+        </div>
       </div>
-    </div>
-    <div class="wow fadeInDown section cf" data-wow-offset="200">
+    </section>
+    <section class="wow fadeInDown" data-wow-offset="200">
       <h2>Attending conferences</h2>
-      <div class="section__images fl-r">
-        <div>
-          <figure>
-            <img src="images/cssconf_us.jpg" width="300" alt="">
-            <figcaption>CSS Conf / US, 2013</figcaption>
-          </figure>
-          <figure>
-            <img src="images/cssconf_eu.jpg" width="300" alt="">
-            <figcaption>CSS Conf / Germany, 2014</figcaption>
-          </figure>
+      <div class="row">
+        <div class="col col-lg">
+          <p>As I've studied coding and designing, I became deeply fascinated by design conferences. Talks from great speakers are very informative, and chatting with attendees is exciting for me. That's why I became interested in this community.</p>
+          <h3>My favorite talks</h3>
+          <ul>
+            <li><a href="http://youtu.be/b9HGzJIcfDE?list=PL8rji95IPUUCIt9eXWmAO6jsCZDJGDhK_" target="_blank">CSSConf US 2013 | Lea Verou: The Humble Border-radius</a></li>
+            <li><a href="http://youtu.be/x0VR3lUOpdc?list=PL8rji95IPUUCIt9eXWmAO6jsCZDJGDhK_" target="_blank">CSSConf US 2013 | Nat Duca & Tom Wiltzius: Jank Busters - Chrome Rendering Performance</a></li>
+            <li><a href="http://youtu.be/FEs2jgZBaQA?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">CSSconf EU 2014 | Addy Osmani: CSS Performance Tooling</a></li>
+            <li><a href="http://youtu.be/lf7L8X6ZBu8?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">CSSconf EU 2014 | Sara Soueidan: Styling and Animating Scalable Vector Graphics with CSS</a></li>
+            <li><a href="http://youtu.be/ZlxpF9taprI?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">CSSconf EU 2014 | Karolina Szczur: Validate Me</a></li>
+            <li><a href="http://vimeo.com/117250454" target="_blank">SmashingConf Whistler | Susan Robertson on "Style Guides: Why bother?"</a></li>
+            <li><a href="http://vimeo.com/117250453" target="_blank">SmashingConf Whistler | Yoav Weiss on Responsive Images</a></li>
+          </ul>
         </div>
-        <div>
-          <figure>
-            <img src="images/smashingconf.jpg" width="300" alt="">
-            <figcaption>Smashing Conf / Canada, 2014</figcaption>
-          </figure>
+        <div class="col col-lg">
+          <div class="col-lg_images">
+            <figure>
+              <img src="images/cssconf_us.jpg" alt="">
+              <figcaption>CSS Conf / US, 2013</figcaption>
+            </figure>
+            <figure>
+              <img src="images/cssconf_eu.jpg" alt="">
+              <figcaption>CSS Conf / Germany, 2014</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg_images">
+            <figure>
+              <img src="images/smashingconf.jpg" alt="">
+              <figcaption>Smashing Conf / Canada, 2014</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
-      <p>As I've studied coding and designing, I became deeply fascinated by design conferences. Talks from great speakers are very informative, and chatting with attendees is exciting for me. That's why I became interested in this community.</p>
-      <h3>My favorite talks</h3>
-      <ul>
-        <li><a href="http://youtu.be/b9HGzJIcfDE?list=PL8rji95IPUUCIt9eXWmAO6jsCZDJGDhK_" target="_blank">CSSConf US 2013 | Lea Verou: The Humble Border-radius</a></li>
-        <li><a href="http://youtu.be/x0VR3lUOpdc?list=PL8rji95IPUUCIt9eXWmAO6jsCZDJGDhK_" target="_blank">CSSConf US 2013 | Nat Duca & Tom Wiltzius: Jank Busters - Chrome Rendering Performance</a></li>
-        <li><a href="http://youtu.be/FEs2jgZBaQA?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">CSSconf EU 2014 | Addy Osmani: CSS Performance Tooling</a></li>
-        <li><a href="http://youtu.be/lf7L8X6ZBu8?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">CSSconf EU 2014 | Sara Soueidan: Styling and Animating Scalable Vector Graphics with CSS</a></li>
-        <li><a href="http://youtu.be/ZlxpF9taprI?list=PL37ZVnwpeshHAnqFlTxhd0MIXWjLBbM3R" target="_blank">CSSconf EU 2014 | Karolina Szczur: Validate Me</a></li>
-        <li><a href="http://vimeo.com/117250454" target="_blank">SmashingConf Whistler | Susan Robertson on "Style Guides: Why bother?"</a></li>
-        <li><a href="http://vimeo.com/117250453" target="_blank">SmashingConf Whistler | Yoav Weiss on Responsive Images</a></li>
-      </ul>
-    </div>
+    </section>
   </main>
   <footer>
     <div class="section contact">

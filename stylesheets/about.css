@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*———————————–———————————–
-  Base Settings
+  Base Tags
 ———————————–———————————–*/
 
 body {
@@ -11,24 +11,82 @@ body {
   line-height: 1.6;
 }
 
-main {
-  padding-bottom: 3rem;
+header {
+  height: 80vh;
+  background: url("../images/ellekasai.jpg") no-repeat top right;
+  background-size: cover;
 }
 
-main p {
+header > div {
+  position: relative;
+  height: 100%;
+}
+
+main {
+  padding: 1rem 0 3rem;
+}
+
+section {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+section > h2 {
+  width: 22.5rem;
+  font-size: 1.8rem;
+}
+
+section p {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
 
-h2 {
+footer {
+  padding: 2rem 0 3rem;
+  background-color: #dae2dd;
+}
+
+h1, h2, h3 {
   color: #99a599;
+}
+
+h1 {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 45rem;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+h1 > span {
+  font-weight: 400;
+}
+
+h2 {
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 h3 {
-  margin-top: 2rem;
+  margin: 0 0 1rem;
   font-size: 1rem;
+}
+
+p + h3 {
+  margin-top: 2rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 1rem;
   color: #99a599;
 }
 
@@ -70,199 +128,82 @@ a:hover {
 }
 
 /*———————————–———————————–
-  Float & Clearfix
+  Main Area
 ———————————–———————————–*/
 
-.cf:before,
-.cf:after {
+.row:before,
+.row:after {
   content:"";
   display:block;
   overflow:hidden;
 }
 
-.cf:after {
+.row:after {
   clear:both;
 }
 
-.fl-l {
-  float: left;
-}
-
-.fl-r {
-  float: right;
-}
-
-figure.fl-l {
-  margin-left: 0;
-}
-
-figure.fl-r {
-  margin-right: 0;
-}
-
-/*———————————–———————————–
-  Spaces
-———————————–———————————–*/
-
-.space-lg {
-  margin-top: 3rem;
-}
-
-/*———————————–———————————–
-  Button
-———————————–———————————–*/
-
-.tag {
-  display: inline-block;
-  margin-right: 0.5rem;
-  padding: 0.3rem 0.5rem !important;
-  border-radius: 0.2rem;
-  color: #fff !important;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-
-}
-
-.tag-purple {
-  background-color: #dda2d0 !important;
-  vertical-align: top;
-}
-
-.tag-cream {
-  background-color: #f9d284 !important;
-  vertical-align: bottom;
-}
-
-/*———————————–———————————–
-  Header
-———————————–———————————–*/
-
-header {
-  width: 100%;
-  height: 80vh;
-  background-image: url("../images/ellekasai.jpg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: cover;
-}
-
-h1 {
-  position: absolute;
-  bottom: 1rem;
-  left: 0;
-  width: 100%;
-  color: #99a599;
-  font-size: 4rem;
-  font-weight: 100;
-  line-height: 1.2;
-  letter-spacing: -1px;
-}
-
-h1 > span {
-  font-weight: 400;
-}
-
-.header__inner {
-  position: relative;
-  height: 100%;
-}
-
-.header__inner__title {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-  width: 45rem;
-}
-
-/*———————————–———————————–
-  Section
-———————————–———————————–*/
-
-.section {
-  margin: 0 auto;
-  padding: 2rem 0;
-  width: 80vw;
-}
-
-.section > h2 {
-  width: 22.5rem;
-  font-size: 1.8rem;
-  line-height: 1.2;
-}
-
-.section__block + .section__block {
-  margin-top: 3rem;
-}
-
-.section__block p {
-  margin-top: 0;
-}
-
-.section__block figure {
-  margin-top: 0;
-}
-
-.section__images {
-  width: 42rem;
-  text-align: center;
-}
-
-.section__images div + div {
+.row + .row {
   margin-top: 2rem;
 }
 
-.section__images figure {
-  display: inline-block;
-  margin: 0;
-}
-
-.section__images figure + figure {
-  margin-left: 2rem;
-}
-
-.section__images figure > figcaption {
-  margin-top: 1rem;
-  color: #99a599;
-  text-align: center;
-}
-
-.section__projects + .section__projects {
-  margin-top: 6.5rem;
-}
-
-.section__projects > div {
+.col {
   float: left;
-  width: 22.5rem;
 }
 
-.section__projects > div + div {
+.col + .col {
   margin-left: 2.2rem;
 }
 
-.section__projects > div {
-  margin-top: -5.5rem;
-}
-
-.section__projects > div.section__projects__intro {
-  margin-top: -1rem;
-}
-
-.section__projects h3 {
-  margin-top: 1rem;
-}
-
-.section__projects figure {
+.col p{
   margin: 0;
 }
 
-.section__projects__intro {
-  float: left;
+.col p + p {
+  margin-top: 0.5rem;
+}
+
+.col-sm {
+  width: 22.5rem;
+}
+
+.col-lg {
+  width: 34.8rem;
+}
+
+.col-sm figure {
+  margin-bottom: 1rem;
+}
+
+.col-lg div + div {
+  margin-top: 2rem;
+}
+
+.col-lg_images {
+  text-align: center;
+}
+
+.col-lg_images figure {
+  display: inline-block;
+  width: 16rem;
+}
+
+.col-lg_images figure + figure {
+  margin-left: 2rem;
 }
 
 /*———————————–———————————–
   Contact
 ———————————–———————————–*/
+
+.contact > h2 {
+  width: 100%;
+}
+
+.contact > p{
+  margin: 0;
+  color: #99a599;
+  font-size: 1.3rem;
+}
 
 .contact li {
   display: inline-block;
@@ -270,12 +211,6 @@ h1 > span {
 
 .contact li + li {
   margin-left: 1.5rem;
-}
-
-.contact > p{
-  margin-bottom: 0;
-  color: #99a599;
-  font-size: 1.3rem;
 }
 
 .contact a {
@@ -297,15 +232,27 @@ footer .contact {
   text-align: center;
 }
 
-.section.contact h2 {
-  width: 100%;
-}
-
 /*———————————–———————————–
-  Footer
+  Tags
 ———————————–———————————–*/
 
-footer {
-  padding-bottom: 3rem;
-  background-color: #dae2dd;
+.tag {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.5rem !important;
+  border-radius: 0.2rem;
+  color: #fff !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  vertical-align: top;
 }
+
+.tag-purple {
+  background-color: #dda2d0 !important;
+}
+
+.tag-cream {
+  background-color: #f9d284 !important;
+}
+
