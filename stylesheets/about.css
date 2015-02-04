@@ -276,6 +276,45 @@ footer .contact {
   Media Querys
 ———————————–———————————–*/
 
+@media screen and (max-width: 1439px) {
+  section {
+    width: 76vw;
+  }
+  .row {
+    margin: -5% 0 0 -3.3%;
+  }
+  .col {
+    margin: 5% 0 0 3.3%;
+  }
+  .col-sm {
+    width: 30%;
+  }
+  .col-sm img {
+    width: 100%;
+  }
+  .col-lg {
+    width: 46.7%;
+  }
+  .col-lg_images figure {
+    width: 47%;
+  }
+  .col-lg_images figure + figure {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  header > div {
+    background-color: rgba(1, 1, 1, 0.7)
+  }
+  .col-lg {
+    width: 100%;
+  }
+  .col-lg_images img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header  {
     height: 60vh;
@@ -283,7 +322,6 @@ footer .contact {
   header > div {
     height: 50vh;
     padding: 5vh 0;
-    background-color: rgba(1, 1, 1, 0.7)
   }
   main {
     padding-top: 0;
@@ -312,9 +350,6 @@ footer .contact {
   .col-sm {
     width: 45%;
   }
-  .col-sm img {
-    width: 100%;
-  }
   .col-lg {
     width: 90vw;
   }
@@ -339,23 +374,22 @@ footer .contact {
   }
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 754px) {
   header  {
-    height: 80vh;
+    height: 75vh;
   }
   header > div {
-    height: 70vh;
+    height: 65vh;
   }
-  h1 {
-    width: 80vw;
-    font-size: 2rem;
-  }
-  section + section {
-    padding: 0 0 1.5rem;
-  }
+}
+
+@media screen and (max-width: 660px) {
   section > h2 {
     width: 80vw;
     font-size: 1.2rem;
+  }
+  section + section {
+    padding: 0 0 1.5rem;
   }
   .row {
     margin: 0;
@@ -389,6 +423,19 @@ footer .contact {
   .col-lg_images figure + figure {
     margin: 1.5rem 0 0;
   }
+}
+
+@media screen and (max-width: 512px) {
+  header  {
+    height: 45%;
+  }
+  header > div {
+    height: 45%;
+  }
+  h1 {
+    width: 80%;
+    font-size: 2.3rem;
+  }
   .contact > p {
     font-size: 0.9rem;
   }
@@ -399,4 +446,3 @@ footer .contact {
     text-align: center;
   }
 }
-
