@@ -9,7 +9,7 @@
     font-size: 62.5%;
   }
   body {
-      color: #727272;
+    color: #727272;
     font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
     line-height: 1.6;
@@ -18,10 +18,14 @@
     background: url("../images/ellekasai.jpg") no-repeat top right;
     background-size: cover;
   }
-  main {
+  main,
+  footer,
+  section.bg-sales {
     padding: 10% 0;
   }
-  section {
+  section,
+  footer .contact,
+  .bg-sales_inner {
     width: 80%;
     margin: 0 auto;
   }
@@ -33,33 +37,29 @@
     font-weight: 300;
   }
   footer {
-    padding: 10% 0;
     background-color: #dae2dd;
   }
   h1, h2, h3, h4 {
     color: #99a599;
+    line-height: 1.2;
+  }
+  h1 > span, h2, h3 {
+    font-weight: 400;
+  }
+  h1, h2, figure, ul {
+    margin: 0;
   }
   h1 {
-    margin: 0;
     font-size: 4rem;
     font-weight: 100;
-    line-height: 1.2;
     letter-spacing: -1px;
   }
-  h1 > span {
-    font-weight: 400;
-  }
   h2 {
-    margin: 0;
     font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 1.2;
   }
   h3 {
     margin: 5% 0 0;
     font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.2;
   }
   h3 + p {
     margin: 3% 0 0;
@@ -67,15 +67,11 @@
   h4 {
     margin: 0 0 5%;
     font-size: 1.6rem;
-    line-height: 1.2;
   }
   iframe {
     margin-top: 3%;
   }
   iframe + p {
-    margin: 0;
-  }
-  figure {
     margin: 0;
   }
   figcaption {
@@ -84,7 +80,6 @@
     text-align: center;
   }
   ul {
-    margin: 0;
     padding-left: 7%;
   }
   li + li {
@@ -107,7 +102,6 @@
       opacity: 0;
       transform: translate3d(10%, 0, 0);
     }
-
     100% {
       opacity: 1;
       transform: none;
@@ -136,7 +130,6 @@
   .col + .col {
     margin-top: 5%;
   }
-
   .col-lg > h3 {
     margin: 7% 0 5%;
   }
@@ -146,7 +139,6 @@
   }
   .col-sm > a {
     display: block;
-    position: relative;
   }
   .col-lg_images + .col-lg_images {
     margin-top: 5%;
@@ -160,9 +152,6 @@
   .contact ul {
     text-align: center;
     padding: 0;
-  }
-  .contact > h2 {
-    width: 100%;
   }
   .contact > p {
     margin: 0;
@@ -185,19 +174,12 @@
     font-size: 3rem;
   }
   footer .contact {
-    width: 80%;
-    margin: 0 auto;
     text-align: center;
   }
   section.bg-sales {
     width: 100%;
-    padding: 10% 0;
     background: url("../images/sales-white.jpg") no-repeat center center;
     background-size: cover;
-  }
-  .bg-sales_inner {
-    width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -231,7 +213,8 @@
   .col-sm.col-intro {
     width: 95%;
   }
-  .col-sm {
+  .col-sm,
+  .col-lg_images > figure {
     width: 45%;
   }
   .col-sm > a:hover img {
@@ -239,7 +222,6 @@
   }
   .col-lg_images > figure {
     float: left;
-    width: 45%;
   }
   .col-lg_images > figure + figure {
     margin: 0 0 0 5%;
@@ -268,14 +250,12 @@
     font-size: 1.6rem;
   }
   main,
-  footer {
+  footer,
+  section.bg-sales {
     padding: 5% 0;
   }
   section + section {
     margin-top: 5%;
-  }
-  section.bg-sales {
-    padding: 5% 0;
   }
   h1 {
     width: 60%;
@@ -309,9 +289,6 @@
   }
   .col-sm.col-intro {
     margin-top: 0;
-  }
-  .col-sm + .col-sm {
-    margin-top: 2%;
   }
   .col-lg{
     width: 46%;
