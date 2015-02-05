@@ -147,6 +147,9 @@
   .col-sm > a {
     display: block;
   }
+  .col-sm p > span {
+    color: #C2C2C2;
+  }
   .col-lg_images + .col-lg_images {
     margin-top: 5%;
   }
@@ -221,7 +224,7 @@
     margin-top: 3%;
   }
   .col-sm {
-    min-height: 18em;
+    min-height: 21em;
   }
   .col-sm.col-intro {
     width: 95%;
@@ -298,7 +301,7 @@
     margin-top: 2%;
   }
   .col-sm {
-    height: 20em;
+    height: 22em;
   }
   .col-sm,
   .col-sm.col-intro {
