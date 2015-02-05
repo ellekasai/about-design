@@ -80,6 +80,7 @@
     text-align: center;
   }
   ul {
+    font-family: 'Roboto Slab', serif;
     padding-left: 7%;
   }
   li + li {
