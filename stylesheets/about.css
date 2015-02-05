@@ -4,331 +4,316 @@
   Base Tags
 ———————————–———————————–*/
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  color: #727272;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6;
-}
-
-header {
-  background: url("../images/ellekasai.jpg") no-repeat top right;
-  background-size: cover;
-}
-
-header > div {
-  padding: 10%;
-  background-color: rgba(1, 1, 1, 0.7);
-  box-sizing: border-box;
-}
-
-main {
-  padding: 10% 0;
-}
-
-section {
-  width: 80%;
-  margin: 0 auto;
-}
-
-section + section {
-  margin-top: 10%;
-}
-
-section p {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-}
-
-footer {
-  padding: 10% 0;
-  background-color: #dae2dd;
-}
-
-h1, h2, h3, h4 {
-  color: #99a599;
-}
-
-h1 {
-  margin: 0;
-  font-size: 4rem;
-  font-weight: 100;
-  line-height: 1.2;
-  letter-spacing: -1px;
-}
-
-h1 > span {
-  font-weight: 400;
-}
-
-h2 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h3 {
-  margin: 5% 0 0;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h3 + p {
-  margin: 3% 0 0;
-}
-
-h4 {
-  margin: 0 0 5%;
-  font-size: 1.6rem;
-  line-height: 1.2;
-}
-
-iframe {
-  margin-top: 3%;
-}
-
-iframe + p {
-  margin: 0;
-}
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  margin-top: 3%;
-  color: #99a599;
-  text-align: center;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li + li {
-  margin-top: 1rem;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  color: #3BAF65;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #2A7B47;
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(10%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-/*———————————–———————————–
-  Row & Column
-———————————–———————————–*/
-
-.row {
-  /*margin: -2rem 0 0 -2rem;*/
-}
-
-.row:before,
-.row:after {
-  content:"";
-  display:block;
-  overflow:hidden;
-}
-
-.row:after {
-  clear:both;
-}
-
-.col {
-  float: left;
-  width: 100%;
-}
-
-.col + .col {
-  margin-top: 5%;
-}
-
-.col-lg > h3 {
-  margin: 7% 0 5%;
-}
-
-.col-lg_images > figure + figure {
-  margin-top: 5%;
-}
-
-.col-lg_images + .col-lg_images {
-  margin-top: 5%;
-}
-
 /*.col {
   float: left;
   margin: 2rem 0 0 2rem;
 }
-
 .col p {
   margin: 0;
 }
-
 .col p + p {
   margin-top: 0.5rem;
 }
-
 .col-sm {
   width: 22.5rem;
   height: 19rem;
 }
-
 .col-lg {
   width: 34.8rem;
 }
-
 .col-sm div {
   margin-bottom: 0.5rem;
 }
-
 .col-sm h3 {
   padding: 0.2rem 0 0;
 }
-
 .col-sm figure {
   margin-bottom: 1rem;
 }*/
-
-.col-sm > a {
-  display: block;
-  position: relative;
-}
-
 /*.col-sm > a:hover img {
   opacity: 0.6;
 }*/
-
 /*.col-lg div + div {
   margin-top: 2rem;
 }
-
 .col-lg_images {
   text-align: center;
 }
-
 .col-lg_images figure {
   display: inline-block;
   width: 16rem;
 }
-
 .col-lg_images figure + figure {
   margin-left: 2rem;
 }*/
 
-/*———————————–———————————–
-  Contact
-———————————–———————————–*/
-
-.contact {
-  margin-top: 10%;
-}
-
-.contact ul {
-  text-align: center;
-}
-
-.contact > h2 {
-  width: 100%;
-}
-
-.contact > p {
-  margin: 0;
-  color: #99a599;
-  font-size: 1.4rem;
-}
-
-.contact li {
-  display: inline-block;
-}
-
-.contact li + li {
-  margin-left: 1.5rem;
-}
-
-.contact a {
-  color: #99a599;
-}
-
-.contact a:hover {
-  color: #737B73;
-}
-
-.contact i {
-  font-size: 3rem;
-}
-
-header .contact {
-/*  position: absolute;
-  bottom: 8rem;
-  left: 5rem;*/
-/*  width: 40rem;*/
-}
-
-footer .contact {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/*———————————–———————————–
-  Backgrounds
-———————————–———————————–*/
-
-section.bg-sales {
-  width: 100%;
-  padding: 10% 0;
-  background: url("../images/sales-white.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.bg-sales_inner {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/*———————————–———————————–
-  Media Querys
-———————————–———————————–*/
 
 @media screen and (min-width: 24em) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    color: #727272;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  header {
+    background: url("../images/ellekasai.jpg") no-repeat top right;
+    background-size: cover;
+  }
+  main {
+    padding: 10% 0;
+  }
+  section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  section + section {
+    margin-top: 10%;
+  }
+  section p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+  }
+  footer {
+    padding: 10% 0;
+    background-color: #dae2dd;
+  }
+  h1, h2, h3, h4 {
+    color: #99a599;
+  }
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+  h1 > span {
+    font-weight: 400;
+  }
+  h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  h3 {
+    margin: 5% 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  h3 + p {
+    margin: 3% 0 0;
+  }
+  h4 {
+    margin: 0 0 5%;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+  iframe {
+    margin-top: 3%;
+  }
+  iframe + p {
+    margin: 0;
+  }
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    margin-top: 3%;
+    color: #99a599;
+    text-align: center;
+  }
+  ul {
+    margin: 0;
+    padding-left: 7%;
+  }
+  li + li {
+    margin-top: 3%;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  a {
+    color: #3BAF65;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #2A7B47;
+  }
+  @-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translate3d(10%, 0, 0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .header_inner {
+    padding: 10%;
+    background-color: rgba(1, 1, 1, 0.7);
+    box-sizing: border-box;
+  }
+  .row:before,
+  .row:after,
+  .col-lg_images:before,
+  .col-lg_images:after {
+    content:"";
+    display:block;
+    overflow:hidden;
+  }
+  .row:after,
+  .col-lg_images:after {
+    clear:both;
+  }
+  .col {
+    float: left;
+  }
+  .col + .col {
+    margin-top: 5%;
+  }
+
+  .col-lg > h3 {
+    margin: 7% 0 5%;
+  }
+  .col {
+    float: left;
+    width: 100%;
+  }
+  .col-sm > a {
+    display: block;
+    position: relative;
+  }
+  .col-lg_images + .col-lg_images {
+    margin-top: 5%;
+  }
+  .col-lg_images > figure + figure {
+    margin-top: 5%;
+  }
+  .contact {
+    margin-top: 10%;
+  }
+  .contact ul {
+    text-align: center;
+    padding: 0;
+  }
+  .contact > h2 {
+    width: 100%;
+  }
+  .contact > p {
+    margin: 0;
+    color: #99a599;
+    font-size: 1.4rem;
+  }
+  .contact li {
+    display: inline-block;
+  }
+  .contact li + li {
+    margin-left: 1.5rem;
+  }
+  .contact a {
+    color: #99a599;
+  }
+  .contact a:hover {
+    color: #737B73;
+  }
+  .contact i {
+    font-size: 3rem;
+  }
+  footer .contact {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  section.bg-sales {
+    width: 100%;
+    padding: 10% 0;
+    background: url("../images/sales-white.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .bg-sales_inner {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 46.8em) {
+  body {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  ul {
+    padding-left: 3%;
+  }
+  .row {
+    margin-left: -5%;
+  }
+  .col {
+    margin-left: 5%;
+  }
+  .col-sm.col-intro {
+    width: 95%;
+  }
+  .col-sm {
+    width: 45%;
+  }
+  .col-lg_images > figure {
+    float: left;
+    width: 45%;
+  }
+  .col-lg_images > figure + figure {
+    margin: 0 0 0 5%;
+  }
+  .bg-sales_inner > .row,
+  .bg-sales_inner > .row > .col {
+    margin-left: 0;
+  }
+  .contact > p {
+    font-size: 1.8rem;
+  }
+  .contact i {
+    font-size: 4rem;
+  }
+  header .contact > ul {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 50em) {
 }
 
 @media screen and (min-width: 73em) {
+  .header_inner {
+    padding: 8% 10%;
+    background: none;
+  }
+  h1 {
+    width: 60%;
+    font-size: 6rem;
+  }
+  .contact {
+    width: 60%;
+  }
+  .contact > p {
+    font-size: 2rem;
+  }
 }
 
 /*@media screen and (max-width: 1439px) {
