@@ -130,8 +130,11 @@
   .col + .col {
     margin-top: 5%;
   }
-  .col-lg > h3 {
-    margin: 7% 0 5%;
+  .col-lg h3 {
+    margin: 7% 0 0;
+  }
+  .col-lg ul {
+    margin-top: 5%;
   }
   .col {
     float: left;
