@@ -187,6 +187,14 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.col-sm > a {
+  display: block;
+}
+
+.col-sm > a:hover img {
+  opacity: 0.6;
+}
+
 .col-lg div + div {
   margin-top: 2rem;
 }
