@@ -249,6 +249,21 @@ footer .contact {
 }
 
 /*———————————–———————————–
+  Backgrounds
+———————————–———————————–*/
+
+section.bg-sales {
+  width: 100%;
+  background: url("../images/sales-white.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.bg-sales_inner {
+  width: 80vw;
+  margin: 0 auto 3rem;
+}
+
+/*———————————–———————————–
   Tags
 ———————————–———————————–*/
 
