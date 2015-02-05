@@ -465,4 +465,7 @@ section.bg-sales {
   header .contact ul {
     text-align: center;
   }
+  .contact i {
+    font-size: 2rem;
+  }
 }
