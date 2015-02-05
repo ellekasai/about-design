@@ -116,13 +116,16 @@
   .row:before,
   .row:after,
   .col-lg_images:before,
-  .col-lg_images:after {
+  .col-lg_images:after,
+  .bg-sales:before,
+  .bg-sales:after {
     content:"";
     display:block;
     overflow:hidden;
   }
   .row:after,
-  .col-lg_images:after {
+  .col-lg_images:after,
+  .bg-sales:after {
     clear:both;
   }
   .col {
@@ -182,7 +185,7 @@
   }
   section.bg-sales {
     width: 100%;
-    background: url("../images/sales-white.jpg") no-repeat center center;
+    background: url("../images/sales-white.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -312,5 +315,14 @@
   }
   .contact > p {
     font-size: 2rem;
+  }
+  section.bg-sales {
+    background: url("../images/sales.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .bg-sales_inner {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
   }
 }
