@@ -169,18 +169,12 @@ a:hover {
   width: 34.8rem;
 }
 
-.col-sm div,
-.col-sm h3 {
-  position: relative;
-}
-
 .col-sm div {
-  padding-left: 6rem;
   margin-bottom: 0.5rem;
 }
 
 .col-sm h3 {
-  padding: 0.2rem 0 0 5rem;
+  padding: 0.2rem 0 0;
 }
 
 .col-sm figure {
@@ -189,6 +183,7 @@ a:hover {
 
 .col-sm > a {
   display: block;
+  position: relative;
 }
 
 .col-sm > a:hover img {
@@ -260,11 +255,9 @@ footer .contact {
 .tag {
   display: inline-block;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  margin-right: 0.5rem;
   padding: 0.3rem 0.5rem !important;
-  border-radius: 0.2rem;
   color: #fff !important;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
@@ -278,6 +271,10 @@ footer .contact {
 
 .tag-cream {
   background-color: #f9d284 !important;
+}
+
+.tag-green {
+  background-color: #2A7B47 !important;
 }
 
 /*———————————–———————————–
