@@ -264,6 +264,9 @@
   section + section {
     margin-top: 5%;
   }
+  section.bg-sales {
+    margin-top: 10%;
+  }
   h1 {
     width: 60%;
     font-size: 6rem;
