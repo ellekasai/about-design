@@ -101,6 +101,23 @@
   a:hover {
     color: #2A7B47;
   }
+  .btn-wrapper {
+    display: inline-block;
+    width: 50%;
+  }
+  button {
+    width: 100%;
+    padding: 5% 10%;
+    background-color: transparent;
+    border: 1px solid #3BAF65;
+    border-radius: 0.5rem;
+    color: #3BAF65;
+    font-size: 1.6rem;
+  }
+  button:hover {
+    border-color: #3BAF65;
+    color: #2A7B47;
+  }
   @-webkit-keyframes fadeInRight {
     0% {
       opacity: 0;
@@ -198,6 +215,9 @@
     background: url("../images/sales-white.jpg") no-repeat center;
     background-size: cover;
   }
+  #js-after {
+    display: none;
+  }
 }
 
 /*———————————–———————————–
@@ -220,6 +240,12 @@
   }
   ul {
     padding-left: 3%;
+  }
+  button {
+    font-size: 1.8rem;
+  }
+  .btn-wrapper {
+    width: 25%;
   }
   .row {
     margin-left: -5%;
@@ -360,7 +386,7 @@
     color: #99a599;
   }
   section.bg-sales {
-    background: url("../images/sales.jpg") no-repeat center center;
+    background: url("../images/sales.jpg") no-repeat center 35%;
     background-size: cover;
   }
   .bg-sales_inner {
