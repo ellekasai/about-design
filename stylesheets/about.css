@@ -110,10 +110,10 @@
   button {
     width: 100%;
     padding: 5% 10%;
-    background-color: transparent;
-    border: 1px solid #3BAF65;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid #727272;
     border-radius: 0.5rem;
-    color: #3BAF65;
+    color: #727272;
     font-size: 1.6rem;
   }
   button:hover {
