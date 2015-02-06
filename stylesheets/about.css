@@ -20,12 +20,12 @@
   }
   main,
   footer,
-  section.bg-sales {
+  section.bg-story {
     padding: 10% 0;
   }
   section,
   footer .contact,
-  .bg-sales_inner {
+  .bg-story_inner {
     width: 80%;
     margin: 0 auto;
   }
@@ -139,22 +139,22 @@
   .row:after,
   .col-lg_images:before,
   .col-lg_images:after,
-  .bg-sales:before,
-  .bg-sales:after {
+  .bg-story:before,
+  .bg-story:after {
     content:"";
     display:block;
     overflow:hidden;
   }
   .row:after,
   .col-lg_images:after,
-  .bg-sales:after {
+  .bg-story:after {
     clear:both;
   }
   .col {
     float: left;
   }
   .col + .col {
-    margin-top: 5%;
+    margin-top: 15%;
   }
   .col-lg h3 {
     margin: 7% 0 0;
@@ -212,9 +212,10 @@
   footer .contact {
     text-align: center;
   }
-  section.bg-sales {
+  section.bg-story {
     width: 100%;
-    background: url("../images/sales-white.jpg") no-repeat center;
+    padding-bottom: 75%;
+    background: url("../images/sales-white.jpg") no-repeat bottom center;
     background-size: cover;
   }
   #js-after {
@@ -256,7 +257,7 @@
     margin-left: 5%;
   }
   .col + .col {
-    margin-top: 3%;
+    margin-top: 7%;
   }
   .col-sm.col-intro {
     width: 95%;
@@ -282,8 +283,8 @@
   .col-sm_images + .col-sm_images {
     margin-top: 5%;
   }
-  .bg-sales_inner > .row,
-  .bg-sales_inner > .row > .col {
+  .bg-story_inner > .row,
+  .bg-story_inner > .row > .col {
     margin-left: 0;
   }
   .contact > p {
@@ -294,6 +295,9 @@
   }
   header .contact > ul {
     text-align: left;
+  }
+  section.bg-story {
+    padding-bottom: 60%;
   }
 }
 
@@ -307,14 +311,11 @@
   }
   main,
   footer,
-  section.bg-sales {
+  section.bg-story {
     padding: 5% 0;
   }
   section + section {
     margin-top: 5%;
-  }
-  section.bg-sales {
-    margin-top: 10%;
   }
   h1 {
     width: 60%;
@@ -335,13 +336,13 @@
     background: none;
   }
   .row {
-    margin-left: -3.3%;
+    margin: -5% 0 0 -3.3%;
   }
   .col {
-    margin-left: 3.3%;
+    margin: 5% 0 0 3.3%;
   }
   .col + .col {
-    margin-top: 2%;
+    margin-top: 5%;
   }
   .col-sm,
   .col-sm.col-intro {
@@ -355,7 +356,7 @@
     clear: none;
   }
   .col-sm.col-intro {
-    margin-top: 0;
+    margin-top: 3%;
   }
   .hello {
     width: 46%;
@@ -372,7 +373,7 @@
   .col-sm.col-sm_images {
     clear: none;
     width: 16%;
-    margin: 2% 0 0 3.8%;
+    margin: 8% 0 0 3.8%;
   }
   .col-sm_images img {
     width: 80%;
@@ -387,11 +388,11 @@
   header .contact a {
     color: #99a599;
   }
-  section.bg-sales {
+  section.bg-story {
     background: url("../images/sales.jpg") no-repeat center 35%;
     background-size: cover;
   }
-  .bg-sales_inner {
+  .bg-story_inner {
     width: 40%;
     float: right;
     margin-right: 10%;
