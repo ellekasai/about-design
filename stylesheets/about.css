@@ -39,7 +39,10 @@
   footer {
     background-color: #dae2dd;
   }
-  h1, h2, h3, h4 {
+  h1, .contact > p {
+    color: #C6CCC6;
+  }
+  h2, h3, h4 {
     color: #78817a;
     line-height: 1.2;
   }
@@ -151,9 +154,9 @@
     color: #C2C2C2;
   }
   .col-sm_images img {
-    border-radius: 50%;
-    width: 70%;
+    width: 45%;
     margin: 0 auto;
+    border-radius: 50%;
   }
   .col-sm_images + .col-sm_images {
     margin-top: 10%;
@@ -162,12 +165,11 @@
     margin-top: 10%;
   }
   .contact ul {
-    text-align: center;
     padding: 0;
+    text-align: center;
   }
   .contact > p {
     margin: 0;
-    color: #78817a;
     font-size: 1.4rem;
   }
   .contact li {
@@ -184,6 +186,9 @@
   }
   .contact i {
     font-size: 3rem;
+  }
+  header .contact a {
+    color: #AAB9AD;
   }
   footer .contact {
     text-align: center;
@@ -225,9 +230,6 @@
   .col + .col {
     margin-top: 3%;
   }
-  .col-sm {
-    min-height: 21em;
-  }
   .col-sm.col-intro {
     width: 95%;
     min-height: 100%;
@@ -235,12 +237,19 @@
   .col-sm {
     width: 45%;
   }
+  .col-sm:nth-child(4),
+  .col-sm:nth-child(8) {
+    clear: both;
+  }
   .col-sm > a:hover img {
     opacity: 0.6;
   }
   .col-sm_images {
+    width: 28%;
     margin-top: 5%;
-    min-height: 16em;
+  }
+  .col-sm_images img {
+    width: 70%;
   }
   .col-sm_images + .col-sm_images {
     margin-top: 5%;
@@ -281,6 +290,7 @@
   }
   h1 {
     width: 60%;
+    color: #78817a;
     font-size: 6rem;
   }
   h2 {
@@ -305,32 +315,49 @@
   .col + .col {
     margin-top: 2%;
   }
-  .col-sm {
-    height: 22em;
-  }
   .col-sm,
   .col-sm.col-intro {
     width: 30%;
   }
+  .col-sm:nth-child(4),
+  .col-sm:nth-child(7) {
+    clear: both;
+  }
+  .col-sm:nth-child(8) {
+    clear: none;
+  }
   .col-sm.col-intro {
     margin-top: 0;
   }
-  .col-lg{
+  .hello {
     width: 46%;
   }
+  .hello .row,
+  .col.col-lg {
+    margin-left: 0;
+  }
+  .hello h2,
   .events h2,
   .events p {
     text-align: center;
   }
   .col-sm.col-sm_images {
-    margin-top: 2%;
-    height: 19em;
+    clear: none;
+    width: 16%;
+    margin: 2% 0 0 3.8%;
+  }
+  .col-sm_images img {
+    width: 80%;
   }
   .contact {
     width: 60%;
   }
   .contact > p {
+    color: #78817a;
     font-size: 2rem;
+  }
+  header .contact a {
+    color: #99a599;
   }
   section.bg-sales {
     background: url("../images/sales.jpg") no-repeat center center;
