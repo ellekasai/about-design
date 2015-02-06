@@ -1,10 +1,11 @@
 $(function() {
   var $trigger = $('#js-trigger');
-  var $prevContents = $('#js-prev');
+  var $wrapper = $('.bg-story');
   var $afterContents = $('#js-after');
 
   $trigger.on('click', function() {
-      $prevContents.hide();
+      $trigger.hide();
+      $wrapper.addClass('bg-none');
       $afterContents.fadeIn('slow');
   });
 });
