@@ -75,7 +75,7 @@
     margin: 0;
   }
   figcaption {
-    margin-top: 3%;
+    margin-top: 5%;
     color: #99a599;
     text-align: center;
   }
@@ -150,11 +150,13 @@
   .col-sm p > span {
     color: #C2C2C2;
   }
-  .col-lg_images + .col-lg_images {
-    margin-top: 5%;
+  .col-sm_images img {
+    border-radius: 50%;
+    width: 70%;
+    margin: 0 auto;
   }
-  .col-lg_images > figure + figure {
-    margin-top: 5%;
+  .col-sm_images + .col-sm_images {
+    margin-top: 10%;
   }
   .contact {
     margin-top: 10%;
@@ -230,18 +232,18 @@
     width: 95%;
     min-height: 100%;
   }
-  .col-sm,
-  .col-lg_images > figure {
+  .col-sm {
     width: 45%;
   }
   .col-sm > a:hover img {
     opacity: 0.6;
   }
-  .col-lg_images > figure {
-    float: left;
+  .col-sm_images {
+    margin-top: 5%;
+    min-height: 16em;
   }
-  .col-lg_images > figure + figure {
-    margin: 0 0 0 5%;
+  .col-sm_images + .col-sm_images {
+    margin-top: 5%;
   }
   .bg-sales_inner > .row,
   .bg-sales_inner > .row > .col {
@@ -281,6 +283,9 @@
     width: 60%;
     font-size: 6rem;
   }
+  h2 {
+    margin-bottom: 2%;
+  }
   h3 {
     font-size: 2rem;
   }
@@ -312,6 +317,14 @@
   }
   .col-lg{
     width: 46%;
+  }
+  .events h2,
+  .events p {
+    text-align: center;
+  }
+  .col-sm.col-sm_images {
+    margin-top: 2%;
+    height: 19em;
   }
   .contact {
     width: 60%;
