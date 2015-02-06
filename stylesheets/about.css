@@ -39,12 +39,14 @@
   footer {
     background-color: #dae2dd;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.2;
+  }
   h1, .contact > p {
     color: #C6CCC6;
   }
   h2, h3, h4 {
     color: #78817a;
-    line-height: 1.2;
   }
   h1 > span, h2, h3 {
     font-weight: 400;
