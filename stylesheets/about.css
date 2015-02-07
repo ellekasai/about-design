@@ -15,7 +15,7 @@
     line-height: 1.6;
   }
   header {
-    background: url("../images/ellekasai.jpg") no-repeat top right;
+    background: url("/images/about/ellekasai.jpg") no-repeat top right;
     background-size: cover;
   }
   main,
@@ -42,7 +42,7 @@
   h1, h2, h3, h4 {
     line-height: 1.2;
   }
-  h1, .contact > p {
+  h1, header .contact > p {
     color: #C6CCC6;
   }
   h2, h3, h4 {
@@ -85,8 +85,8 @@
     text-align: center;
   }
   ul {
-    font-family: 'Roboto Slab', serif;
     padding-left: 7%;
+    font-family: 'Roboto Slab', serif;
   }
   li + li {
     margin-top: 3%;
@@ -131,23 +131,23 @@
     }
   }
   .header_inner {
-    padding: 10%;
     background-color: rgba(1, 1, 1, 0.7);
+    padding: 10%;
     box-sizing: border-box;
   }
   .row:before,
   .row:after,
   .col-lg_images:before,
   .col-lg_images:after,
-  .bg-story:before,
-  .bg-story:after {
+  .bg-story_inner:before,
+  .bg-story_inner:after {
     content:"";
     display:block;
     overflow:hidden;
   }
   .row:after,
   .col-lg_images:after,
-  .bg-story:after {
+  .bg-story_inner:after {
     clear:both;
   }
   .col {
@@ -212,10 +212,15 @@
   footer .contact {
     text-align: center;
   }
+  .contact .footer_source {
+    margin-top: 4%;
+    font-size: 1.3rem;
+    color: #99a599;
+  }
   section.bg-story {
     width: 100%;
     padding-bottom: 75%;
-    background: url("../images/sales-white.jpg") no-repeat bottom center;
+    background: url("/images/about/sales-white.jpg") no-repeat bottom center;
     background-size: cover;
   }
   #js-after {
@@ -223,7 +228,7 @@
   }
   .bg-story.bg-none {
     background: none;
-    padding: 0;
+    padding: 10% 0 0;
   }
   .story_img {
     margin: 10% 0 0;
@@ -233,6 +238,9 @@
     display: inline;
     width: 50%;
     border-radius: 50%;
+  }
+  .hello h2 {
+    margin-bottom: 5%;
   }
 }
 
@@ -303,6 +311,9 @@
   section.bg-story {
     padding-bottom: 60%;
   }
+  .hello h2 {
+    margin-bottom: 4%;
+  }
   .contact > p {
     font-size: 1.8rem;
   }
@@ -349,7 +360,7 @@
     background: none;
   }
   .row {
-    margin: -5% 0 0 -3.3%;
+    margin: -3% 0 0 -3.3%;
   }
   .col {
     margin: 5% 0 0 3.3%;
@@ -383,6 +394,9 @@
   .events p {
     text-align: center;
   }
+  .events h2 {
+    margin-bottom: 3%;
+  }
   .col-sm.col-sm_images {
     clear: none;
     width: 16%;
@@ -398,24 +412,51 @@
     color: #78817a;
     font-size: 2rem;
   }
+  header .contact p {
+    color: #78817a;
+  }
   header .contact a {
     color: #99a599;
   }
   section.bg-story {
-    background: url("../images/sales.jpg") no-repeat center center;
+    background: url("/images/about/sales.jpg") no-repeat center 30%;
     background-size: cover;
   }
   .bg-story.bg-none {
-    background: url("../images/sales.jpg") no-repeat center center;
+    background: url("/images/about/sales.jpg") no-repeat center center;
     background-size: cover;
     padding: 5% 0;
   }
-  .bg-story_inner {
+  .bg-story_content {
     float: right;
-    width: 40%;
-    margin-right: 10%;
+    width: 50%;
+    margin-right: 3%;
   }
   .story_img {
     display: none;
+  }
+}
+
+@media screen and (min-width: 135em) {
+  header {
+    background-position: right 30%;
+  }
+  .header_inner {
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 8% 0;
+  }
+  section,
+  footer .contact {
+    max-width: 115rem;
+  }
+  section.bg-story {
+    max-width: 100%;
+  }
+  .bg-story_inner {
+    max-width: 115rem;
+  }
+  .hello {
+    max-width: 60rem;
   }
 }
